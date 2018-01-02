@@ -2,7 +2,7 @@ $:.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |s|
   s.name        = "authlogic"
-  s.version     = "3.5.0"
+  s.version     = "3.5.0.noscrypt"
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Ben Johnson"]
   s.email       = ["bjohnson@binarylogic.com"]
@@ -15,7 +15,6 @@ Gem::Specification.new do |s|
   s.add_dependency 'activerecord', ['>= 4.2', '< 5.2']
   s.add_dependency 'activesupport', ['>= 4.2', '< 5.2']
   s.add_dependency 'request_store', '~> 1.0'
-  s.add_dependency 'scrypt', '>= 1.2', '< 4.0'
   s.add_development_dependency 'bcrypt', '~> 3.1'
 
   # byebug 9.1 drops support for ruby 2.1, so we must stay < 9.1 for now.
